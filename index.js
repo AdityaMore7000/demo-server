@@ -4,7 +4,7 @@ import cors from 'cors'
 
 const app = express();
 app.use(cors({
-    origin:'http://localhost:5173'
+    origin:process.env.ORIGIN
 }));
 const port = process.env.PORT || 3000;
 
